@@ -1,2 +1,260 @@
 Name: Recipes
 Type: RecipesCategoryFolder
+Children:
+- Name: 配方模式1
+  Id: g=74859f3639724b24d63d8c73fbe3076c
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Modbus工作站1
+      Type: BaseObjectType
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+        Children:
+        - Name: hreg_1_工作站_1
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: hreg_2_工作站_1
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+    - Name: Modbus工作站2
+      Type: BaseObjectType
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+        Children:
+        - Name: hreg_1_工作站_2
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: hreg_2_工作站_2
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+  - Class: Reference
+    Target: ns=16;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=16;i=60
+    Direction: Forward
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"2abb1721cac208747b08c013a51a5b14","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"44b329207079ce74d7da52f206db45af","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":8}
+  - Name: 配方应用程序事件Handler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":73,"Namespace":16}
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":58}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+            Value: {"IdType":2,"Id":"d73106248de5bb60c3399200b718e800","Namespace":7}
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../EventArguments/Status"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+    - Name: EventArguments
+      Type: RecipeApplicationEvent
+      Children:
+      - Name: RecipeName
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: DestinationNode
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: MethodId
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: InputArguments
+        Type: PropertyType
+        DataType: BaseDataType
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+      - Name: ActionTimeStamp
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Status
+        Type: PropertyType
+        DataType: Boolean
+        Value: false
+      - Name: ServerId
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: ClientAuditEntryId
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: ClientUserId
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+        Value: ""
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+        Value: 0
+  - Name: EditModel
+    Id: g=c68f1b821605a6ffff8d5cdc5e37d16c
+    Type: BaseObjectType
+    Children:
+    - Name: Modbus工作站1
+      Type: BaseObjectType
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+        Children:
+        - Name: hreg_1_工作站_1
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: hreg_2_工作站_1
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+    - Name: Modbus工作站2
+      Type: BaseObjectType
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+        Children:
+        - Name: hreg_1_工作站_2
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0
+        - Name: hreg_2_工作站_2
+          Type: BaseDataVariableType
+          DataType: Int16
+          Value: 0

@@ -7,10 +7,10 @@ Children:
   - Name: Nodes
     Type: BaseObjectType
     Children:
-    - Name: Node1
+    - Name: 节点1
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"69b63ec1680bb66226168ed8c16521a0","Namespace":7}
+      Value: {"IdType":2,"Id":"2d22eadb1e2a78081ba007a1ba110aff","Namespace":7}
       Children:
       - Name: Kind
         Type: PropertyType

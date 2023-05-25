@@ -1,0 +1,65 @@
+Name: NewHMIProject1
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Type: PropertyType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["zh-CN","en-US"]
+  - Name: LocaleFallbackList
+    Type: PropertyType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: Authentication
+  Type: PropertyGroup
+- Name: PasswordPolicy
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Type: PropertyType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Type: PropertyType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: 配方模式1
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"c68f1b821605a6ffff8d5cdc5e37d16c","Namespace":7}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"e032669050785e2850e4d7b4902e2d6a","Namespace":7}

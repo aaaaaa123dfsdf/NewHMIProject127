@@ -1,0 +1,18 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: hreg_1_工作站_2
+  Id: g=5fdc7fae6d1a163e2cdfcf4558ab2938
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+- Name: hreg_2_工作站_2
+  Id: g=f055b649ddbbfc677f6b81ee75024a1a
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1

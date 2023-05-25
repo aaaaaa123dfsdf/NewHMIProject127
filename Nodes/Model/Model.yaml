@@ -1,2 +1,8 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- Name: 状态
+  Id: g=d73106248de5bb60c3399200b718e800
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

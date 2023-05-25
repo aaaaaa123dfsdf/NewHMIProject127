@@ -1,0 +1,47 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: hreg_1_工作站_1
+  Id: g=306b61a9f668631fc1d302a95e2b2312
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+- Name: hreg_2_工作站_1
+  Id: g=701bdfb00ae3556309ee45a9efccf4a1
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: EURange
+    Value: 
+     {
+      "TypeId": {
+       "Id": 884
+      },
+      "Body": {
+       "low": 0.0,
+       "high": 0.0
+      }
+     }
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 90.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true

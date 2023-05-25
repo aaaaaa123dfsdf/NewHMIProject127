@@ -1,0 +1,12 @@
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\bin\NewHMIProject1.deps.json
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\bin\NewHMIProject1.dll
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\bin\NewHMIProject1.pdb
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\NewHMIProject1.csproj.AssemblyReference.cache
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\NewHMIProject1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\NewHMIProject1.AssemblyInfoInputs.cache
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\NewHMIProject1.AssemblyInfo.cs
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\NewHMIProject1.csproj.CoreCompileInputs.cache
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\NewHMIProject1.dll
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\refint\NewHMIProject1.dll
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\NewHMIProject1.pdb
+C:\Users\fzhang14\Desktop\NewHMIProject1.optix\NewHMIProject1\ProjectFiles\NetSolution\obj\Debug\ref\NewHMIProject1.dll
